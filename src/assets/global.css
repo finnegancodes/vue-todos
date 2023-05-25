@@ -60,7 +60,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
+  /* text-rendering: optimizeSpeed; */
   line-height: 1.5;
   background-color: var(--bg);
   color: var(--primary);

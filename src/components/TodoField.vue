@@ -1,4 +1,6 @@
 <script lang="ts">
+import { v4 as uuidv4 } from 'uuid';
+
 export default {
   data() {
     return {
@@ -9,7 +11,7 @@ export default {
     addTodo() {
       if (!this.newTodo) return;
       this.$store.commit("add", {
-        id: crypto.randomUUID(),
+        id: uuidv4(),
         task: this.newTodo,
         isDone: false,
       });
